@@ -1,0 +1,4 @@
+vim [이름.확장자] (- 파일 생성)
+git add . (-파일 추가)
+git commit -m "메세지" (-커밋 생성with 메세지)
+git push -u origin main
