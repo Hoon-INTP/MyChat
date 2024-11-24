@@ -28,7 +28,10 @@ int main() {
 	try {
 		asio::io_context io_context;
 
-		std::string server = "127.0.0.1"; // 辑滚 IP 林家
+		std::cout << "Enter Server Address: ";
+		std::string server; // 辑滚 IP 林家
+		std::getline(std::cin, server);
+
 		tcp::resolver resolver(io_context);
 		tcp::resolver::results_type endpoints = resolver.resolve(server, "12345");
 
